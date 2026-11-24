@@ -43,6 +43,10 @@ The `vendor`, `node_modules` and `tests` folders are only needed for development
 
 ### Settings
 
+![The plugin's settings page in the WordPress admin: attribution lifetime, consent, lead log and the optional server-side forward](docs/settings.png)
+
+*The settings page on a local WordPress 7.1 test site.*
+
 | Setting | Default | What it does |
 | --- | --- | --- |
 | Attribution lifetime (days) | 90 | How long the stored attribution is kept. 1 to 395. |
