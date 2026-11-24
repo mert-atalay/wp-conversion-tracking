@@ -1,0 +1,16 @@
+{
+  "name": "lead-conversion-tracking",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Front-end script and tests for the Lead Conversion Tracking WordPress plugin.",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "test": "node --test \"tests/js/*.test.js\""
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
