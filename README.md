@@ -260,8 +260,8 @@ tests/js/                      node:test tests
 
 What is missing or not proven yet:
 
-- **Barely tested inside WordPress.** The automated tests replace WordPress functions with stubs. By hand I activated the plugin on a local WordPress 7.1 (WordPress Playground): it loaded without errors, the script and its settings were printed on the front end, and the settings page rendered. I have not yet submitted a real form through it or run it on a hosted site.
-- **Not tested against live installs of Contact Form 7 or WPForms.** The adapters follow the documented hooks and events of those plugins, and the tests simulate them. Hook behaviour can differ between versions. The tips about CF7 mail tags and WPForms hidden-field classes are also untested.
+- **Tested once on a local WordPress, not on a hosted site.** The automated tests replace WordPress functions with stubs. By hand I ran the plugin on a local WordPress 7.1 (WordPress Playground) with Contact Form 7 6.2. I opened the site with campaign parameters and a click id, then submitted the form on another page. The stored attribution was written into the hidden fields, the browser pushed one `generate_lead` event, and the lead log on the settings page showed the same event id and source. Consent was set with the "Assume consent" setting, and mail sending was stubbed to succeed because the test site has no mail server. I have not run it on a hosted site, behind a page cache, or with a consent plugin.
+- **WPForms is untested on a live install.** That adapter follows the documented hooks and events, and the tests simulate them. The server-side forward has also only run in the automated tests. Hook behaviour can differ between versions. The tips about CF7 mail tags and WPForms hidden-field classes are untested.
 - **No GTM container.** You have to create the `generate_lead` trigger, the dataLayer variables and the tags yourself.
 - **No receiving endpoint.** The server-side forward posts JSON to a URL you provide. Nothing in this repository receives, verifies or de-duplicates it.
 - **Not in the WordPress.org plugin directory.** It has not been through that review.
