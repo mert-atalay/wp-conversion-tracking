@@ -4,6 +4,8 @@ A small WordPress plugin for lead-generation sites. It keeps the traffic source 
 
 This is an example and reference implementation. I wrote it to show how I approach this problem. It is not a finished product. Read the [Limits](#limits) section before you use any of it.
 
+Related case study on [mertatalay.com](https://mertatalay.com): [One lead, followed from the click to the CRM and back](https://mertatalay.com/work/lead-to-crm-loop/).
+
 - Requires WordPress 6.3+ and PHP 8.1+
 - No JavaScript dependencies, no build step
 - License: GPL-2.0-or-later
